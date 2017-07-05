@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Проверка работы вкладки правонарушений и вкладки пользователи.]">
+  <test name="Проверка поиска по ГРЗ и полей карты пользователя.(failed)">
+    <classes>
+      <class name="ru.infsol.tests.Tests">
+        <methods>
+          <include name="afterTest"/>
+          <include name="adminWorkWithUser"/>
+          <include name="setUp"/>
+          <include name="grzTest"/>
+        </methods>
+      </class> <!-- ru.infsol.tests.Tests -->
+    </classes>
+  </test> <!-- Проверка поиска по ГРЗ и полей карты пользователя.(failed) -->
+</suite> <!-- Failed suite [Проверка работы вкладки правонарушений и вкладки пользователи.] -->
