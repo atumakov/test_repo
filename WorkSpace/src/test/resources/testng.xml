@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Проверка работы вкладки правонарушений и вкладки пользователи."  thread-count="10">
+    <test name="Проверка поиска по ГРЗ и полей карты пользователя." >
+        <classes>
+            <class name="ru.infsol.tests.Tests">
+                <methods>
+                    <include name="grzTest" />
+                    <include name="adminWorkWithUser"/>
+                </methods>
+        </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,7 @@
+ru\infsol\factorys\BrowserFactory.class
+ru\infsol\pages\OfficerPage.class
+ru\infsol\pages\VehiclePage.class
+ru\infsol\tests\Tests.class
+ru\infsol\pages\AdminPage.class
+ru\infsol\pages\LoginPage.class
+ru\infsol\robots\MainRobot.class
