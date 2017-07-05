@@ -11,14 +11,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/systemLogin$D__WorkSpace_src_test_resources_testng_xml.coverage" NAME="$PROJECT_DIR$/src/test/resources/testng.xml Coverage Results" MODIFIED="1499261634784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+            <state relative-caret-position="194">
+              <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -61,8 +64,8 @@
       <file leaf-file-name="OfficerPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="677">
+              <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,13 +76,11 @@
       <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            <state relative-caret-position="153">
+              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
-                <element signature="e#1891#1892#0" expanded="false" />
-                <element signature="e#1937#1938#0" expanded="false" />
-                <element signature="e#1972#1973#0" expanded="false" />
-                <element signature="e#2007#2008#0" expanded="false" />
+                <element signature="e#1736#1737#0" expanded="true" />
+                <element signature="e#1818#1819#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +89,8 @@
       <file leaf-file-name="AdminPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="112" column="43" lean-forward="false" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+            <state relative-caret-position="194">
+              <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1499250888571" expanded="true" signature="3147:3646" ph="..." />
@@ -101,8 +102,8 @@
       <file leaf-file-name="MainRobot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/robots/MainRobot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="374">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -138,12 +139,13 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/tests/FilterClicker.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/ru/infsol/factorys/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/ru/infsol/robots/MainRobot.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/VehiclePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/robots/MainRobot.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
       </list>
     </option>
   </component>
@@ -203,9 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -380,6 +379,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -685,34 +687,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 02m 22s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 15h 59m 12s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 04m 26s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 26m 38s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 05m 03s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 27m 56s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 07m 19s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 33m 06s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 10m 26s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 33m 56s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 11m 19s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 33m 57s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 18m 15s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 38m 43s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 19m 02s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 41m 15s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 19m 39s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 41m 50s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 12h 20m 21s.xml">
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.05 at 16h 46m 17s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -731,6 +733,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -755,7 +758,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -764,6 +767,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/robots/MainRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -815,10 +826,8 @@
         <state relative-caret-position="748">
           <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding>
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="false" />
-            <element signature="e#1972#1973#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,10 +894,8 @@
         <state relative-caret-position="918">
           <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="false" />
-            <element signature="e#1972#1973#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -950,10 +957,8 @@
         <state relative-caret-position="527">
           <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
           <folding>
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="false" />
-            <element signature="e#1972#1973#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,10 +1048,8 @@
         <state relative-caret-position="544">
           <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
           <folding>
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="false" />
-            <element signature="e#1972#1973#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1081,10 +1084,8 @@
         <state relative-caret-position="748">
           <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
           <folding>
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="false" />
-            <element signature="e#1972#1973#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1144,41 +1145,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/robots/MainRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
-            <element signature="e#1891#1892#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="false" />
-            <element signature="e#1972#1973#0" expanded="false" />
-            <element signature="e#2007#2008#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/robots/MainRobot.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="194">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1499250888571" expanded="true" signature="3147:3646" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1191,24 +1183,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="112" column="43" lean-forward="false" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+        <state relative-caret-position="194">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1499250888571" expanded="true" signature="3147:3646" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        <state relative-caret-position="677">
+          <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

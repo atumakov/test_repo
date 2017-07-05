@@ -1,0 +1,25 @@
+{
+  "testCases" : [ {
+    "uid" : "3e559ac071f5a2de",
+    "name" : "grzTest",
+    "title" : "Grz test",
+    "time" : {
+      "start" : 1499252982024,
+      "stop" : 1499252987720,
+      "duration" : 5696
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "6ba9e2692727f99a",
+    "name" : "adminWorkWithUser",
+    "title" : "Admin work with user",
+    "time" : {
+      "start" : 1499252987728,
+      "stop" : 1499252999765,
+      "duration" : 12037
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  } ]
+}

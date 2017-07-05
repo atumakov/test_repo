@@ -3,6 +3,7 @@ package ru.infsol.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -30,9 +31,9 @@ public class Tests {
 
 
     @BeforeSuite
-    public void setUp() throws AWTException {
-        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
-        driver = new ChromeDriver();
+    public void setUp(){
+        System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\geckodriver.exe");
+        driver = new FirefoxDriver();
         wait = new WebDriverWait(driver, 30, 500);
 
         loginPage = LoginPage.getInstance(driver, wait);
@@ -40,7 +41,11 @@ public class Tests {
         vehiclePage = VehiclePage.getInstance(driver, wait);
         adminPage = AdminPage.getInstance(driver, wait);
 
-        loginPage.startPage();
+        try {
+            loginPage.startPage();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 

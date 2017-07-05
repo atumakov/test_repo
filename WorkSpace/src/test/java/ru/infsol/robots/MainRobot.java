@@ -22,6 +22,7 @@ public class MainRobot extends Robot{
     }
 
     /*
+    C060KX30
     * login: fism_viewer
     * password: SuperInfSol2017
     *
@@ -29,7 +30,7 @@ public class MainRobot extends Robot{
     public void robotAuthorize() {
 
 
-        delay(2000);
+        delay(10 *1000);
 
         keyPress(KeyEvent.VK_F);
         keyPress(KeyEvent.VK_I);

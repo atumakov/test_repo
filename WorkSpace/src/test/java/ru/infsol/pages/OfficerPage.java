@@ -88,7 +88,8 @@ public class OfficerPage {
         grzTextArea.sendKeys(string);
     }
 
-    public void findGrz() {
+    public void findGrz() throws Exception {
+        Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-icon.k-i-search")));
         findButton.click();
     }
@@ -96,33 +97,18 @@ public class OfficerPage {
     public void getTableElemets() throws Exception {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody>tr")));
         List<WebElement> array = tableElements.findElements(By.cssSelector(".k-selectable>tbody>tr"));/*первая строка строк много для выбора конкретной строки не первой нужно загружать массив строк */
+        Thread.sleep(1000);
         array.get(0).click();
     }
 
-//    /**
-//     * @param filterValue : 1. draftFilter 2.verfiedFilter 3. confirmedfilter
-//     */
-//
-//    public void setFilter(int filterValue) {
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-draft")));
-//        switch (filterValue) {
-//            case 1:
-//                draftFilter.click();
-//                break;
-//            case 2:
-//                verifiedFilter.click();
-//                break;
-//            case 3:
-//                confirmedFilter.click();
-//                break;
-//            default:
-//                break;
-//        }
-//    }
-     public void restartPage(){
+    public void restartPage() {
         driver.get("http://5.189.128.204/officer");
-         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-draft")));
-         grzTextArea.clear();
-         findGrz();
-     }
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-draft")));
+        grzTextArea.clear();
+        try {
+            findGrz();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

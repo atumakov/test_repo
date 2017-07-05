@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1499262359145" stop="1499262376609" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя.</name>
+    <title>Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя.</title>
+    <test-cases>
+        <test-case start="1499262359485" stop="1499262365758" status="passed">
+            <name>grzTest</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Проверка работы вкладки правонарушений и вкладки пользователи."/>
+                <label name="testGroup" value="Проверка поиска по ГРЗ и полей карты пользователя."/>
+                <label name="testClass" value="ru.infsol.tests.Tests"/>
+                <label name="testMethod" value="grzTest"/>
+                <label name="host" value="work-pc"/>
+                <label name="thread" value="6020@work-pc.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1499262365766" stop="1499262374894" status="passed">
+            <name>adminWorkWithUser</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Проверка работы вкладки правонарушений и вкладки пользователи."/>
+                <label name="testGroup" value="Проверка поиска по ГРЗ и полей карты пользователя."/>
+                <label name="testClass" value="ru.infsol.tests.Tests"/>
+                <label name="testMethod" value="adminWorkWithUser"/>
+                <label name="host" value="work-pc"/>
+                <label name="thread" value="6020@work-pc.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

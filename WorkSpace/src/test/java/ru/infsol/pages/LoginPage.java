@@ -7,9 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import ru.infsol.robots.MainRobot;
-
-import java.awt.*;
 
 /**
  * Created by Alexander Tumakov on 30.06.2017.
@@ -35,7 +32,8 @@ public class LoginPage {
     private String url;
 
     private LoginPage(WebDriver driver, WebDriverWait wait) {
-        url = "http://5.189.128.204/login?isLocal=true";
+
+        url = "http://fism_viewer:SuperInfSol2017@5.189.128.204/login?isLocal=true";
         this.driver = driver;
         this.wait = wait;
         PageFactory.initElements(driver, this);
@@ -51,28 +49,27 @@ public class LoginPage {
             return page;
         }
     }
-    public void startPage(){
+
+
+    public void startPage() throws Exception {
         driver.get(url);
-        try {
-            MainRobot.getInstanceOfRobot().robotAuthorize();
-        } catch (AWTException e) {
-            e.printStackTrace();
-        }
+
         setLogin();
         setPassword();
         enterToSystem();
     }
-    private void setLogin(){
+
+    private void setLogin() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#login")));
         login.sendKeys("tumakovaa");
 
     }
 
-    private void setPassword(){
+    private void setPassword() {
         password.sendKeys("6031769Aa");
     }
 
-    private void enterToSystem(){
+    private void enterToSystem() {
         loginButton.click();
     }
 
