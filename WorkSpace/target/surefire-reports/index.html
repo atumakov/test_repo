@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи.">
-                    <span>D:\WorkSpace\src\test\resources\testng.xml</span>
+                    <span>D:\Документы\repo\WorkSpace\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи." class="show-methods passed suite-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи."> (show)</a> <!-- show-methods passed suite-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи. -->
                     </span>
                     <div class="method-list-content passed suite-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи.">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи." title="ru.infsol.tests.Tests" hash-for-method="adminWorkWithUser">adminWorkWithUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи." title="ru.infsol.tests.Tests" hash-for-method="grzTest">grzTest</a> <!-- method navigator-link -->
@@ -130,13 +125,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="adminWorkWithUser">
-                  </a> <!-- adminWorkWithUser -->
-                  <span class="method-name">adminWorkWithUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="grzTest">
                   </a> <!-- grzTest -->
                   <span class="method-name">grzTest</span>
@@ -147,7 +135,7 @@
         </div> <!-- panel Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи. -->
         <div panel-name="test-xml-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи." class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\WorkSpace\src\test\resources\testng.xml</span>
+            <span class="header-content">D:\Документы\repo\WorkSpace\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,7 +147,7 @@
       &lt;class name=&quot;ru.infsol.tests.Tests&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;grzTest&quot;/&gt;
-          &lt;include name=&quot;adminWorkWithUser&quot;/&gt;
+          &lt;exclude name=&quot;adminWorkWithUser&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- ru.infsol.tests.Tests --&gt;
     &lt;/classes&gt;
@@ -201,20 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'adminWorkWithUser')
+data.setCell(0, 1, 'grzTest')
 data.setCell(0, 2, 'ru.infsol.tests.Tests')
-data.setCell(0, 3, 12039);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'grzTest')
-data.setCell(1, 2, 'ru.infsol.tests.Tests')
-data.setCell(1, 3, 5754);
+data.setCell(0, 3, 6574);
 window.suiteTableData['Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи.']= { tableData: data, tableDiv: 'times-div-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи.'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи.">
               </div> <!-- times-div-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи. -->
             </div> <!-- times-div -->
@@ -229,9 +213,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи." class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ru.infsol.tests.Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">adminWorkWithUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Проверка_работы_вкладки_правонарушений_и_вкладки_пользователи." class="panel">
@@ -247,15 +238,11 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">grzTest</span>
-                <span class="method-start">11528 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">adminWorkWithUser</span>
-                <span class="method-start">17291 ms</span>
+                <span class="method-start">21713 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">29331 ms</span>
+                <span class="method-start">28293 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

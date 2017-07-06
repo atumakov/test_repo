@@ -2,20 +2,20 @@ package ru.infsol.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 import ru.infsol.pages.AdminPage;
 import ru.infsol.pages.LoginPage;
 import ru.infsol.pages.OfficerPage;
 import ru.infsol.pages.VehiclePage;
-import ru.yandex.qatools.allure.annotations.Step;
 
 import java.awt.*;
-import java.sql.Driver;
+import java.util.ArrayList;
 
 /**
  * Created by  Alexander Tumakov  on 30.06.2017.
@@ -62,6 +62,8 @@ public class Tests {
     @Test(priority = 1)
     public void grzTest() throws Exception {
         grzNumber = "Х040КУ30";
+        officerPage.setDateTextFrom("01.05.2017");
+        officerPage.setDateTextTo("06.07.2017");
         officerPage.enterGrzNumber(grzNumber);
         officerPage.findGrz();
         officerPage.getTableElemets();

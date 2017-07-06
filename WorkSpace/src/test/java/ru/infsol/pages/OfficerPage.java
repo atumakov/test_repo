@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -96,7 +98,7 @@ public class OfficerPage {
 
     public void getTableElemets() throws Exception {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody>tr")));
-        List<WebElement> array = tableElements.findElements(By.cssSelector(".k-selectable>tbody>tr"));/*первая строка строк много для выбора конкретной строки не первой нужно загружать массив строк */
+        List<WebElement> array = tableElements.findElements(By.cssSelector(".k-selectable>tbody>tr"));
         Thread.sleep(1000);
         array.get(0).click();
     }
@@ -111,4 +113,15 @@ public class OfficerPage {
             e.printStackTrace();
         }
     }
+    public void setDateTextFrom(String date) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateFrom")));
+        dateTextFrom.clear();
+        dateTextFrom.sendKeys(date);
+    }
+    public void setDateTextTo(String date){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateTo")));
+        dateTextTo.clear();
+        dateTextTo.sendKeys(date);
+    }
+
 }

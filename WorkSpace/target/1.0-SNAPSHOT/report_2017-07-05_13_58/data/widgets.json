@@ -3,17 +3,17 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 2,
-        "passed" : 2,
+        "total" : 1,
+        "passed" : 1,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 0,
         "broken" : 0
       },
       "time" : {
-        "start" : 1499252982024,
-        "stop" : 1499252999765,
-        "duration" : 17741
+        "start" : 1499263147628,
+        "stop" : 1499263153815,
+        "duration" : 6187
       }
     },
     "defects" : {
@@ -23,11 +23,11 @@
     "xunit" : {
       "totalCount" : 1,
       "items" : [ {
-        "uid" : "fb1bae60a02382b5",
+        "uid" : "9da976ec3c759abc",
         "title" : "Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя.",
         "statistic" : {
-          "total" : 2,
-          "passed" : 2,
+          "total" : 1,
+          "passed" : 1,
           "pending" : 0,
           "canceled" : 0,
           "failed" : 0,
@@ -40,8 +40,8 @@
       "items" : [ {
         "title" : "Without feature",
         "statistic" : {
-          "total" : 2,
-          "passed" : 2,
+          "total" : 1,
+          "passed" : 1,
           "pending" : 0,
           "canceled" : 0,
           "failed" : 0,

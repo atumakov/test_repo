@@ -1,0 +1,14 @@
+{
+  "testCases" : [ {
+    "uid" : "f911ffa69fd0ad27",
+    "name" : "grzTest",
+    "title" : "Grz test",
+    "time" : {
+      "start" : 1499263147628,
+      "stop" : 1499263153815,
+      "duration" : 6187
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  } ]
+}

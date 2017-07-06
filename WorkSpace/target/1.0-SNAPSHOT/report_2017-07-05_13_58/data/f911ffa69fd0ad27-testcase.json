@@ -1,11 +1,11 @@
 {
-  "uid" : "6ba9e2692727f99a",
-  "name" : "adminWorkWithUser",
-  "title" : "Admin work with user",
+  "uid" : "f911ffa69fd0ad27",
+  "name" : "grzTest",
+  "title" : "Grz test",
   "time" : {
-    "start" : 1499252987728,
-    "stop" : 1499252999765,
-    "duration" : 12037
+    "start" : 1499263147628,
+    "stop" : 1499263153815,
+    "duration" : 6187
   },
   "summary" : {
     "attachments" : 0,
@@ -16,7 +16,7 @@
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "fb1bae60a02382b5",
+    "uid" : "9da976ec3c759abc",
     "name" : "Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя.",
     "title" : "Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя."
   },
@@ -34,11 +34,8 @@
     "name" : "suite-name",
     "value" : "Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя."
   }, {
-    "name" : "thread",
-    "value" : "4476@work-pc.main(1)"
-  }, {
     "name" : "testMethod",
-    "value" : "adminWorkWithUser"
+    "value" : "grzTest"
   }, {
     "name" : "testClass",
     "value" : "ru.infsol.tests.Tests"
@@ -54,6 +51,9 @@
   }, {
     "name" : "suite-title",
     "value" : "Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя."
+  }, {
+    "name" : "thread",
+    "value" : "540@work-pc.main(1)"
   } ],
   "parameters" : [ ]
 }
