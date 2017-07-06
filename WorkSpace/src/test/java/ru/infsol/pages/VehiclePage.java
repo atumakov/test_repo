@@ -9,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Created by Alexander Tumakov on 30.06.2017.
  */
@@ -21,10 +24,11 @@ public class VehiclePage {
     private static VehiclePage page;
     private static WebDriver driver;
     private static WebDriverWait wait;
-
+    private static Logger l;
     private VehiclePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
+        l=  Logger.getLogger(VehiclePage.class.getName());
         PageFactory.initElements(driver, this);
     }
 
@@ -38,11 +42,13 @@ public class VehiclePage {
     }
 
     public String getGrzNumber() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='vehicle-regNumber']")));
+
+
         try{
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='vehicle-regNumber']")));
             Thread.sleep(1500);
         }catch (Exception e){
-            e.printStackTrace();
+            l.log(Level.SEVERE, "Exception: " + driver.getTitle() + ":" + driver.getCurrentUrl(), e);
         }
         return grzTextArea.getText();
     }
