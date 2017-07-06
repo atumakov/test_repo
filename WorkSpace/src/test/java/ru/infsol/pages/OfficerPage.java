@@ -111,11 +111,9 @@ public class OfficerPage {
     public void getTableElemets() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody>tr")));
         try {
-            List<WebElement> array = tableElements.findElements(By.cssSelector(".k-selectable>tbody>tr"));
-            Thread.sleep(1000);
-            array.get(0).click();
+            driver.findElement(By.cssSelector(".k-selectable>tbody>tr")).click();
         } catch (Exception e) {
-            log.log(Level.SEVERE, "Exception: ", e);
+            log.log(Level.SEVERE, "Exception: " , e);
         }
     }
 
