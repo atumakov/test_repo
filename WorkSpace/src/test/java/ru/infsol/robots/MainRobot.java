@@ -21,12 +21,6 @@ public class MainRobot extends Robot{
         return r;
     }
 
-    /*
-    C060KX30
-    * login: fism_viewer
-    * password: SuperInfSol2017
-    *
-    */
     public void robotAuthorize() {
 
 

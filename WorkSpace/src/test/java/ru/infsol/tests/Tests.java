@@ -68,7 +68,6 @@ public class Tests {
         officerPage.findGrz();
         officerPage.getTableElemets();
         Assert.assertTrue(grzNumber.contains(vehiclePage.getGrzNumber()));
-//        officerPage.restartPage();
     }
 
     /*
