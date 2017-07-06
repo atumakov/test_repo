@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by Alexander Tumakov on 30.06.2017.
@@ -67,10 +67,12 @@ public class OfficerPage {
     private String grzNumber;
     private static WebDriver driver;
     private static WebDriverWait wait;
+    private static Logger log;
 
     private OfficerPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
+        log = Logger.getLogger(OfficerPage.class.getName());
         PageFactory.initElements(driver, this);
     }
 
@@ -84,49 +86,68 @@ public class OfficerPage {
     }
 
     public void enterGrzNumber(String string) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#officer-list-filter-regNo")));
+
         try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#officer-list-filter-regNo")));
             Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            grzNumber = string;
+            grzTextArea.clear();
+            grzTextArea.sendKeys(string);
+        } catch (Exception e) {
+            log.log(Level.SEVERE, "Exception: ", e);
         }
-        grzNumber = string;
-        grzTextArea.clear();
-        grzTextArea.sendKeys(string);
     }
 
     public void findGrz() throws Exception {
         Thread.sleep(1000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-icon.k-i-search")));
-        findButton.click();
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-icon.k-i-search")));
+            findButton.click();
+        } catch (Exception e) {
+            log.log(Level.SEVERE, "Exception: ", e);
+        }
     }
 
-    public void getTableElemets() throws Exception {
+    public void getTableElemets() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody>tr")));
-        List<WebElement> array = tableElements.findElements(By.cssSelector(".k-selectable>tbody>tr"));
-        Thread.sleep(1000);
-        array.get(0).click();
+        try {
+            List<WebElement> array = tableElements.findElements(By.cssSelector(".k-selectable>tbody>tr"));
+            Thread.sleep(1000);
+            array.get(0).click();
+        } catch (Exception e) {
+            log.log(Level.SEVERE, "Exception: ", e);
+        }
     }
 
     public void restartPage() {
-        driver.get("http://5.189.128.204/officer");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-draft")));
-        grzTextArea.clear();
         try {
+            driver.get("http://5.189.128.204/officer");
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-draft")));
+            grzTextArea.clear();
             findGrz();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.log(Level.SEVERE, "Exception: ", e);
         }
     }
+
     public void setDateTextFrom(String date) {
+        try{
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateFrom")));
         dateTextFrom.clear();
         dateTextFrom.sendKeys(date);
+        }catch(Exception e){
+            log.log(Level.SEVERE, "Exception: ", e);
+        }
     }
-    public void setDateTextTo(String date){
+
+    public void setDateTextTo(String date) {
+        try{
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateTo")));
         dateTextTo.clear();
         dateTextTo.sendKeys(date);
+        }catch(Exception e){
+            log.log(Level.SEVERE, "Exception: ", e);
+        }
     }
 
 }
