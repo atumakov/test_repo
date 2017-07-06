@@ -85,6 +85,11 @@ public class OfficerPage {
 
     public void enterGrzNumber(String string) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#officer-list-filter-regNo")));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         grzNumber = string;
         grzTextArea.clear();
         grzTextArea.sendKeys(string);
