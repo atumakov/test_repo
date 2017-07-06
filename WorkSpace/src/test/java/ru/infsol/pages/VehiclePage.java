@@ -1,5 +1,6 @@
 package ru.infsol.pages;
 
+import org.apache.tika.io.TemporaryResources;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,7 +38,12 @@ public class VehiclePage {
     }
 
     public String getGrzNumber() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#vehicle-regNumber")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='vehicle-regNumber']")));
+        try{
+            Thread.sleep(1500);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return grzTextArea.getText();
     }
 

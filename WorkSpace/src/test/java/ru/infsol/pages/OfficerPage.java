@@ -89,7 +89,7 @@ public class OfficerPage {
 
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#officer-list-filter-regNo")));
-            Thread.sleep(3000);
+            Thread.sleep(1500);
             grzNumber = string;
             grzTextArea.clear();
             grzTextArea.sendKeys(string);
