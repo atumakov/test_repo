@@ -111,7 +111,7 @@ public class OfficerPage {
     public void getTableElemets() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody>tr")));
         try {
-            driver.findElement(By.cssSelector(".k-selectable>tbody>tr")).click();
+            driver.findElement(By.xpath(".//*[@id='offence-list-grid']/div[3]/div[1]/table/tbody/tr[1]/td[2]")).click();
         } catch (Exception e) {
             log.log(Level.SEVERE, "Exception: " , e);
         }

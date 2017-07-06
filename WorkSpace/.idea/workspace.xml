@@ -17,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            <state relative-caret-position="262">
+              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,20 +32,46 @@
       <file leaf-file-name="VehiclePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/VehiclePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            <state relative-caret-position="-80">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfficerPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OfficerPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="113" column="81" lean-forward="false" selection-start-line="113" selection-start-column="81" selection-end-line="113" selection-end-column="81" />
+            <state relative-caret-position="143">
+              <caret line="110" column="16" lean-forward="false" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <folding>
+                <element signature="e#2002#2003#0" expanded="true" />
+                <element signature="e#2037#2038#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="88" column="110" lean-forward="true" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1499250888571" expanded="true" signature="3147:3646" ph="..." />
               </folding>
             </state>
           </provider>
@@ -95,10 +121,10 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/robots/MainRobot.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
         <option value="$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/By.class" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/VehiclePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java" />
       </list>
     </option>
   </component>
@@ -640,21 +666,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 11h 40m 29s.xml">
-      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 11h 42m 05s.xml">
-      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 11h 44m 41s.xml">
-      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 11h 45m 27s.xml">
-      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 11h 47m 04s.xml">
-      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 11h 47m 56s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -668,6 +679,21 @@
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 12h 00m 40s.xml">
+      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 12h 19m 17s.xml">
+      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 12h 22m 31s.xml">
+      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 12h 24m 41s.xml">
+      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 12h 25m 39s.xml">
+      <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__WorkSpace_src_test_resources_testng_xml - 2017.07.06 at 12h 26m 59s.xml">
       <configuration name="D:/WorkSpace/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1015,17 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1499250888571" expanded="true" signature="3147:3646" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/By.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1120,28 +1135,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/VehiclePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/AdminPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        <state relative-caret-position="211">
+          <caret line="88" column="110" lean-forward="true" selection-start-line="88" selection-start-column="75" selection-end-line="88" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1499250888571" expanded="true" signature="3147:3646" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/OfficerPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="113" column="81" lean-forward="false" selection-start-line="113" selection-start-column="81" selection-end-line="113" selection-end-column="81" />
+        <state relative-caret-position="143">
+          <caret line="110" column="16" lean-forward="false" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/pages/VehiclePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/infsol/tests/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -45,7 +45,7 @@ public class VehiclePage {
 
 
         try{
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='vehicle-regNumber']")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='vehicle-regNumber']")));
             Thread.sleep(1500);
         }catch (Exception e){
             l.log(Level.SEVERE, "Exception: " + driver.getTitle() + ":" + driver.getCurrentUrl(), e);
