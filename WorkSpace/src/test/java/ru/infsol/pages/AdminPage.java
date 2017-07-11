@@ -1,9 +1,7 @@
 package ru.infsol.pages;
 
-import com.google.common.io.Resources;
-import org.apache.commons.io.Charsets;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,9 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.IOException;
-import java.net.URL;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Created by Максим on 04.07.2017.
@@ -32,6 +29,15 @@ public class AdminPage {
 
     @FindBy(xpath = "//div[@class='k-multiselect-wrap k-floatwrap']")
     private WebElement userGroupField;
+
+    @FindBy(xpath = "//li[@data-offset-index=\"0\"]")
+    private WebElement resultGroupAfterFind;
+
+    @FindBy(xpath = ".//*[text()='(выход)']/..")
+    private WebElement exitButton;
+
+    @FindBy(css = ".ui-button.ui-dialog-search-button")
+    private WebElement addUserButton;
 
     @FindBy(css = ".k-selectable>tbody")
     private WebElement userTable;
@@ -60,11 +66,6 @@ public class AdminPage {
     @FindBy(css = "#user-repeatPassword")
     private WebElement userRepeatPasswordTextField;
 
-    @FindBy(xpath = "//li[@data-offset-index=\"0\"]")
-    private WebElement resultGroupAfterFind;
-
-
-
 
     private static AdminPage page;
     private static WebDriver driver;
@@ -85,7 +86,8 @@ public class AdminPage {
         }
     }
 
-    public void enterInAdministratodPage() {
+    public void enterInAdministratorPage() {
+        driver.get("http://5.189.128.204/officer");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[text()='Администрирование']/..")));
         adminPageButton.click();
     }
@@ -94,30 +96,38 @@ public class AdminPage {
     public void enterToUserCard() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody")));
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         driver.findElement(By.xpath("//td[contains(.,\"ТЕСТ\")]")).click();
     }
 
-    public void workWithUserCard() {
+    public void addNewUser() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody")));
+        driver.findElement(By.xpath("//a[contains(text(),\"Добавить пользователя\")]")).click();
+    }
+
+    public void workWithUserInfo(String userPrefix) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#user-firstName")));
         firstNameTextField.clear();
-        firstNameTextField.sendKeys("ТЕСТ");
+        firstNameTextField.sendKeys("ТЕСТ" + userPrefix);
         middleNameTextField.clear();
-        middleNameTextField.sendKeys("ТЕСТОВИЧ");
+        middleNameTextField.sendKeys("ТЕСТОВИЧ" + userPrefix);
         lastNameTextField.clear();
-        lastNameTextField.sendKeys("ТЕСТОВ");
+        lastNameTextField.sendKeys("ТЕСТОВ" + userPrefix);
         userBirthDate.clear();
         userBirthDate.sendKeys("03011981");
         userLoginTextField.clear();
-        userLoginTextField.sendKeys("TEST-03011981");
+        userLoginTextField.sendKeys("TEST-03011981" + userPrefix);
+    }
+
+    public void setUserPassword() {
         userPasswordTextField.clear();
         userPasswordTextField.sendKeys("My12345678");
         userRepeatPasswordTextField.clear();
         userRepeatPasswordTextField.sendKeys("My12345678");
-       }
+    }
 
 
     public void workWithGroupOptions(String group) {
@@ -126,20 +136,53 @@ public class AdminPage {
         userGroupField.click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='user-groups-list']")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@id='user-groups_listbox']")));
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@id='user-groups_listbox']")));
         List<WebElement> elements = driver.findElement(By.xpath("//ul[@id='user-groups_listbox']"))
                 .findElements(By.xpath("//li[@role='option']"));
-        for(WebElement e: elements){
-            if(e.getText().contains(group)){
+
+        for (WebElement e : elements) {
+            if (e.getText().contains(group)) {
                 e.click();
             }
         }
-
+        firstNameTextField.click();
     }
 
-
     public void saveUserCard() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@onclick=\"return gai.administration.departments.saveUser(this);\"]")));
         saveButtonInUserCard.click();
+    }
+
+    public void exitAndEnterInUserInterface(String userPostfix) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody")));
+        exitButton.click();
+        try {
+            LoginPage.getInstance(driver, wait).startPageParams("TEST-03011981" + userPostfix, "My12345678");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void isLoginExist() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (driver.findElement(By.xpath("//p[contains(text(),\"Такой логин уже был использован\")]")).isDisplayed()) {
+                driver.findElement(By.cssSelector(".k-icon.k-i-close")).click();
+                driver.findElement(By.cssSelector(".k-icon.k-i-close")).click();
+            }
+        } catch (org.openqa.selenium.NoSuchElementException exception) {
+            System.err.print("Warning : user exist!");
+        }
+
     }
 
 }

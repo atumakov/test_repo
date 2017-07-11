@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Проверка работы вкладки правонарушений и вкладки пользователи." duration-ms="8657" started-at="2017-07-05T13:59:07Z" finished-at="2017-07-05T13:59:15Z">
+  <suite name="Проверка работы вкладки правонарушений и вкладки пользователи." duration-ms="11549" started-at="2017-07-06T12:02:50Z" finished-at="2017-07-06T12:03:02Z">
     <groups>
     </groups>
-    <test name="Проверка поиска по ГРЗ и полей карты пользователя." duration-ms="8657" started-at="2017-07-05T13:59:07Z" finished-at="2017-07-05T13:59:15Z">
+    <test name="Проверка поиска по ГРЗ и полей карты пользователя." duration-ms="11549" started-at="2017-07-06T12:02:50Z" finished-at="2017-07-06T12:03:02Z">
       <class name="ru.infsol.tests.Tests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.infsol.tests.Tests@7573e12f]" name="setUp" is-config="true" duration-ms="21602" started-at="2017-07-05T16:58:45Z" finished-at="2017-07-05T16:59:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.infsol.tests.Tests@2a389173]" name="setUp" is-config="true" duration-ms="34033" started-at="2017-07-06T15:02:16Z" finished-at="2017-07-06T15:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="grzTest()[pri:1, instance:ru.infsol.tests.Tests@7573e12f]" name="grzTest" duration-ms="6574" started-at="2017-07-05T16:59:07Z" finished-at="2017-07-05T16:59:13Z">
+        <test-method status="PASS" signature="grzTest()[pri:1, instance:ru.infsol.tests.Tests@2a389173]" name="grzTest" duration-ms="9297" started-at="2017-07-06T15:02:50Z" finished-at="2017-07-06T15:02:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- grzTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:ru.infsol.tests.Tests@7573e12f]" name="afterTest" is-config="true" duration-ms="1967" started-at="2017-07-05T16:59:13Z" finished-at="2017-07-05T16:59:15Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:ru.infsol.tests.Tests@2a389173]" name="afterTest" is-config="true" duration-ms="2175" started-at="2017-07-06T15:03:00Z" finished-at="2017-07-06T15:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

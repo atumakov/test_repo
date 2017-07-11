@@ -14,8 +14,7 @@ import ru.infsol.pages.LoginPage;
 import ru.infsol.pages.OfficerPage;
 import ru.infsol.pages.VehiclePage;
 
-import java.awt.*;
-import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by  Alexander Tumakov  on 30.06.2017.
@@ -70,27 +69,24 @@ public class Tests {
         Assert.assertTrue(grzNumber.contains(vehiclePage.getGrzNumber()));
     }
 
-    /*
-     * 1. Вход во кладку Админисрирование/пользователи
-     * 2. Открываем карту с пользователя с именем Тест
-     * 3. Заполняем все необходимые для сохранения поля
-     * 4. Меняем тип пользователя на администратора
-     * 5. Сохраняем карту пользователя
-     * 6. ищем в таблице пользователя с установленным логином TEST-03011981 если находим заканчиваем тест
-     */
-
-
+    
     @Test(dependsOnMethods = "grzTest",
             alwaysRun = true,priority = 2)
-    public void adminWorkWithUser() throws Exception {
-        adminPage.enterInAdministratodPage();
-        adminPage.enterToUserCard();
-        adminPage.workWithUserCard();
+    public void adminCreateNewUserTest() throws Exception {
+        String prefix = getRandomWord(3);
+        adminPage.enterInAdministratorPage();
+        adminPage.addNewUser();
+        adminPage.workWithUserInfo(prefix);
         adminPage.workWithGroupOptions("Оператор");
+        adminPage.setUserPassword();
         adminPage.saveUserCard();
-
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[contains(.,\"ТЕСТ\")]")));
-        Assert.assertTrue(driver.findElement(By.xpath("//td[contains(.,\"TEST-03011981\")]")).getText().contains("03011981"));
+        adminPage.isLoginExist();
+        adminPage.exitAndEnterInUserInterface(prefix);
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".arm-user-name")));
+        Assert.assertTrue(driver.findElement(By.xpath("//div[contains(.,\"ТЕСТОВ\")]")).isDisplayed());
+
     }
 
     @AfterTest
@@ -99,5 +95,12 @@ public class Tests {
         driver.quit();
     }
 
+    private String getRandomWord(int length) {
+        String r = "";
+        for(int i = 0; i < length; i++) {
+            r += (char)(Math.random() * 26 + 97);
+        }
+        return r;
+    }
 
 }

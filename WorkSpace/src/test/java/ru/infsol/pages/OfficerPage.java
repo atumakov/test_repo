@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -111,9 +110,10 @@ public class OfficerPage {
     public void getTableElemets() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".k-selectable>tbody>tr")));
         try {
+            Thread.sleep(1500);
             driver.findElement(By.xpath(".//*[@id='offence-list-grid']/div[3]/div[1]/table/tbody/tr[1]/td[2]")).click();
         } catch (Exception e) {
-            log.log(Level.SEVERE, "Exception: " , e);
+            log.log(Level.SEVERE, "Exception: ", e);
         }
     }
 
@@ -129,21 +129,21 @@ public class OfficerPage {
     }
 
     public void setDateTextFrom(String date) {
-        try{
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateFrom")));
-        dateTextFrom.clear();
-        dateTextFrom.sendKeys(date);
-        }catch(Exception e){
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateFrom")));
+            dateTextFrom.clear();
+            dateTextFrom.sendKeys(date);
+        } catch (Exception e) {
             log.log(Level.SEVERE, "Exception: ", e);
         }
     }
 
     public void setDateTextTo(String date) {
-        try{
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateTo")));
-        dateTextTo.clear();
-        dateTextTo.sendKeys(date);
-        }catch(Exception e){
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#offence-list-filter-offenceDateTo")));
+            dateTextTo.clear();
+            dateTextTo.sendKeys(date);
+        } catch (Exception e) {
             log.log(Level.SEVERE, "Exception: ", e);
         }
     }

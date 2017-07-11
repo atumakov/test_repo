@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1499263147197" stop="1499263155832" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1499349657629" stop="1499349709634" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя.</name>
     <title>Проверка работы вкладки правонарушений и вкладки пользователи. : Проверка поиска по ГРЗ и полей карты пользователя.</title>
     <test-cases>
-        <test-case start="1499263147628" stop="1499263153815" status="passed">
+        <test-case start="1499349657974" stop="1499349672044" status="passed">
             <name>grzTest</name>
             <steps/>
             <attachments/>
@@ -13,7 +13,20 @@
                 <label name="testClass" value="ru.infsol.tests.Tests"/>
                 <label name="testMethod" value="grzTest"/>
                 <label name="host" value="work-pc"/>
-                <label name="thread" value="540@work-pc.main(1)"/>
+                <label name="thread" value="7036@work-pc.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1499349672050" stop="1499349706101" status="passed">
+            <name>adminWorkWithUser</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Проверка работы вкладки правонарушений и вкладки пользователи."/>
+                <label name="testGroup" value="Проверка поиска по ГРЗ и полей карты пользователя."/>
+                <label name="testClass" value="ru.infsol.tests.Tests"/>
+                <label name="testMethod" value="adminWorkWithUser"/>
+                <label name="host" value="work-pc"/>
+                <label name="thread" value="7036@work-pc.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

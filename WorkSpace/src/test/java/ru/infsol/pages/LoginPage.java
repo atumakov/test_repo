@@ -4,11 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.awt.event.KeyEvent;
 
 /**
  * Created by Alexander Tumakov on 30.06.2017.
@@ -60,11 +61,22 @@ public class LoginPage {
         setPassword();
         enterToSystem();
     }
+    public void startPageParams(String login, String password) throws Exception {
+        driver.get(url);
+
+        setLoginParams(login,password);
+        enterToSystem();
+    }
 
     private void setLogin() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#login")));
         login.sendKeys("tumakovaa");
-
+    }
+    private void setLoginParams(String login, String password) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#login")));
+        this.login.sendKeys(login);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#password")));
+        this.password.sendKeys(password);
     }
 
     private void setPassword() {
