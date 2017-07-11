@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Проверка работы вкладки правонарушений и редактирования пользовательских данных."  thread-count="10">
-    <test name="Проверка поиска по ГРЗ и полей карты пользователя." >
+<suite name="Проверка поиска АП по ГРЗ и создания нового пользователя Оператора АРМ."  thread-count="10">
+    <test name="Проверка поиска по ГРЗ и создания нового пользователя Оператора АРМ." >
         <classes>
             <class name="ru.infsol.tests.Tests">
                 <methods>
